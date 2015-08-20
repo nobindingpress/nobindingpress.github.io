@@ -1,0 +1,35 @@
+# Site settings
+title: No Binding Press
+email: contact@nobindingpress.com
+
+description: > # this means to ignore newlines until "baseurl:"
+  No Binding Press is in the buisness of awesome editions of awesome things. We're so
+  good a this that the rest of this description is lorum ipsum doloris lorem ipsum.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://localhost:4000" #CHANGEME!
+
+homepage_categories:
+  - id: shakespeare
+    heading: Shakespeare Editions
+
+stores:
+  gplay:
+    name: Google Play
+    icon: img/gplay.png
+
+collections:
+  books:
+    output: true
+    permalink: /books/:title/
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: books
+    values:
+      layout: book
+
+
+# Build settings
+markdown: kramdown

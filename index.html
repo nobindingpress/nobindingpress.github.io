@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<div class="home">
+  <div class="home-description">
+    <p>
+      {{ site.description }}
+    </p>
+  </div>
+  <div class="home-booklist">
+    {% for category in site.homepage_categories %}
+      <h2>{{ category.heading }}</h2>
+      <div class="bookgrid">
+        {% for book in site.books | where:"category",category.id %}
+          <a href="{{ book.url }}" class="book-item">
+            <div class="cover" style='background-image: url("/img/covers/{{ book.cover }}");'></div>
+            <span class="title">{{ book.title }}</span><br/>
+            <span class="author">by {{ book.author }}</span>
+          </a>
+        {% endfor %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
