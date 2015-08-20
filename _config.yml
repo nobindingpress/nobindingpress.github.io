@@ -6,7 +6,7 @@ description: > # this means to ignore newlines until "baseurl:"
   No Binding Press is in the buisness of awesome editions of awesome things. We're so
   good a this that the rest of this description is lorum ipsum doloris lorem ipsum.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://localhost:4000" #CHANGEME!
+url: "http://www.nobindingpress.com"
 
 homepage_categories:
   - id: shakespeare
