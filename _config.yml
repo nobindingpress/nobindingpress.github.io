@@ -15,6 +15,9 @@ stores:
   gplay:
     name: Google Play
     icon: img/gplay.png
+  readonline:
+    name: Online (PDF)
+    icon: img/online.png
 
 collections:
   books:

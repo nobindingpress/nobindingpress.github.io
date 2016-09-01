@@ -10,7 +10,7 @@ layout: default
       <span class="author">by {{ page.author }}</span>
     </div>
     <div class="buyblock">
-      Get it on: {% for store in page.stores %}
+      Read it: {% for store in page.stores %}
         {% assign storedat = site.stores[store.id] %}
         <a class="storelink" href="{{ store.url }}">
           <img src="{{ site.baseurl }}/{{ storedat.icon }}"/> {{ storedat.name }}
